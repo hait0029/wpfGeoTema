@@ -1,0 +1,30 @@
+﻿<Window x:Class="wpfGeoTema.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpfGeoTema"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF15D8D4" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="UsernameTextbox" HorizontalAlignment="Left" Margin="322,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" Height="36" RenderTransformOrigin="0.173,0.875" FontSize="18" />
+        <TextBox x:Name="PasswordTextbox" HorizontalAlignment="Left" Margin="322,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" Height="36" FontSize="18" Background="White"/>
+        <Label x:Name="Username" Content="Username" HorizontalAlignment="Left" Margin="185,138,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Label x:Name="Password" Content="Password" HorizontalAlignment="Left" Margin="186,0,0,0" VerticalAlignment="Center" Height="48" Width="100" FontSize="22"/>
+        <Button x:Name="Login_btn" Content="LogIn" HorizontalAlignment="Left" Margin="322,315,0,0" VerticalAlignment="Top" Height="73" Width="225" FontSize="48" FontWeight="Bold" FontStyle="Italic" Click="Login_btn_Click"/>
+        <Label Content="Usertype" HorizontalAlignment="Left" Margin="192,258,0,0" VerticalAlignment="Top" Width="101" FontSize="22"/>
+        <ComboBox x:Name="DropDownType" HorizontalAlignment="Left" Margin="322,267,0,0" VerticalAlignment="Top" Width="225" Height="36">
+        <ListBoxItem Content="Bruger" BorderThickness="0" BorderBrush="Transparent"/>
+        <ListBoxItem Content="Superbruger" BorderThickness="0" BorderBrush="Transparent"/>
+        <ListBoxItem Content="Admin" BorderThickness="0" BorderBrush="Transparent"/>
+        </ComboBox>
+
+
+    </Grid>
+</Window>
